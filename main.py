@@ -37,12 +37,12 @@ def play_game():
 
     #game finished
     if winner=="X" or winner=='O':
-        print(winner+"won.")
+        print(winner+" won .")
     elif winner==None:
-        print("Tie.")
+        print(" Tie.")
 
 def handle_turn(player):
-    print(player+"'s turns")
+    print(player+"'s turn")
     position=input("select from 1-9 :")
     valid=False
     while not valid:
@@ -53,8 +53,8 @@ def handle_turn(player):
         if board[position]=="-":
             valid=True
         else:
-            print("You cany go there...!")
-        board[position]=player
+            print("You can't go there...!")
+    board[position]=player
 
     dis_board()
 
